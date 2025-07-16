@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ビグテト PERFECT 6000 スコア計算ツール</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>ビグテト PERFECT 6000 スコア計算ツール</h1>
+    </header>
+
+    <section>
+      <h2>配信用</h2>
+      <table id="display"></table>
+    </section>
+
+    <section>
+      <h2>入力</h2>
+      <p>※ガターは0を入力　Tabキーで進む・Shift+Tabキーで戻る</p>
+      <table id="input"></table>
+    </section>
+
+    <section>
+      <h2>設定</h2>
+      <form id="settings">
+        <label>
+          フレーム数: <input name="frames" type="number" value="10" />
+        </label>
+        <label>
+          ストライクのスコア: <input name="strike" type="number" value="200" />
+        </label>
+        <button>適用＆入力リセット</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>Copyright 2025 <a href="https://x.com/plageoj">ぺんた</a>.</p>
+    </footer>
+  </body>
+</html>

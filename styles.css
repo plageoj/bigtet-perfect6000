@@ -1,0 +1,70 @@
+body {
+  background-color: #111111;
+  color: #f0f0f0;
+}
+
+table {
+  border-collapse: collapse;
+
+  th,
+  td {
+    text-align: center;
+    min-width: 2rem;
+  }
+
+  td {
+    line-height: 2rem;
+  }
+
+  .player-name {
+    padding: 0 1rem;
+  }
+}
+
+#display {
+  th,
+  td[rowspan],
+  tr:nth-of-type(2n) td:nth-of-type(2n),
+  td:last-of-type {
+    border: 1px solid;
+  }
+
+  tr:nth-of-type(2n + 1) td:not(:last-child) {
+    border: solid;
+    border-width: 0 1px 1px 0;
+  }
+
+  .total {
+    padding: 0 1rem;
+  }
+}
+
+#input {
+  th,
+  td {
+    border: 1px solid;
+  }
+
+  input {
+    width: 2.5rem;
+    text-align: center;
+    background: transparent;
+    line-height: 2rem;
+    border: none;
+    color: #f0f0f0;
+
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+  }
+
+  tr > :first-child input {
+    width: 10rem;
+    text-align: left;
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
