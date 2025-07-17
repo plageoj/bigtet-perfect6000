@@ -186,15 +186,14 @@
         "afterbegin",
         `<th>
             <input type="text" tabindex="${player}" data-player="${player}"
-                class="input-player-name" placeholder="Player ${player}"
-                value="${scores[player].name}" />
+                class="input-player-name" placeholder="プレイヤー名" />
         </th>`
       );
       for (let throws = 1; throws <= frames * 2 + 1; throws++) {
         inputRow.insertAdjacentHTML(
           "beforeend",
           `<td>
-                <input type="number" tabindex="${throws * 2 + player + 2}"
+                <input type="number" tabindex="${throws * players + player + 2}"
                     data-player="${player}" data-throw="${throws}"
                     class="input-throw" min="0" max="${strike}" value="" />
           </td>`

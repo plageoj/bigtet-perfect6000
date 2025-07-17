@@ -1,19 +1,34 @@
 body {
   background-color: #111111;
   color: #f0f0f0;
+  font-family: sans-serif;
+}
+
+a {
+  color: #f0f0f0;
+}
+
+section {
+  margin-top: 2rem;
+}
+
+h1,
+h2 {
+  font-weight: normal;
 }
 
 table {
   border-collapse: collapse;
+  margin: auto;
 
   th,
   td {
     text-align: center;
-    min-width: 2rem;
+    min-width: 2.5rem;
   }
 
   td {
-    line-height: 2rem;
+    line-height: 1.5rem;
   }
 
   .player-name {
@@ -22,6 +37,8 @@ table {
 }
 
 #display {
+  font-size: 1.2rem;
+
   th,
   td[rowspan],
   tr:nth-of-type(2n) td:nth-of-type(2n),
@@ -52,9 +69,16 @@ table {
     line-height: 2rem;
     border: none;
     color: #f0f0f0;
+    font-size: 1.2rem;
 
     &::-webkit-inner-spin-button {
       display: none;
+    }
+
+    &:focus {
+      outline: none;
+      background-color: #444;
+      font-weight: bold;
     }
   }
 
